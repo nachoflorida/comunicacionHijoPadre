@@ -2,7 +2,7 @@
 
 ## Comunicación padre->hijo:
 
-El componente padre le pasa al hijo la variable "color" mediante una prop.
+El componente padre le pasa al hijo la variable **color** mediante una prop.
 
 ## Comunicación hijo->padre:
 
