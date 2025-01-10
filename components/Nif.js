@@ -21,7 +21,7 @@ export default class Nif extends Component {
       const letra = calculaLetraNif(valor);
       this.setState({ elDNIintroducido: valor, letraDNI: letra });
       Keyboard.dismiss();
-      this.props.devuelveNif({ dni: valor, letra });
+      this.props.devuelveNif({ dni: valor, letra }); // Aquí nos comunicamos con el componente Padre
     } else {
       this.setState({ elDNIintroducido: '', letraDNI: '' });
     }
