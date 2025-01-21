@@ -29,7 +29,8 @@ export default class Nif extends Component {
 
   render() {
     return (
-      <View style={styles.container}>
+      <View style={{flexDirection: 'row', justifyContent: 'center', alignItems: 'center',
+                   padding: 10, backgroundColor: this.props.color, borderColor: 'blue', borderWidth: 2 }}>
         <Text style={styles.label}>DNI:</Text>
         <TextInput
           style={styles.input}
@@ -51,14 +52,6 @@ export default class Nif extends Component {
 }
 
 const styles = StyleSheet.create({
-  container: {
-    flexDirection: 'row',
-    alignItems: 'center',
-    backgroundColor: '#fff',
-    padding: 10,
-    borderColor: 'blue',
-    borderWidth: 2,
-  },
   label: {
     fontWeight: '600',
     marginHorizontal: 5,
